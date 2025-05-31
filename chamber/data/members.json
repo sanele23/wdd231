@@ -8,7 +8,7 @@
         "Representative": "Ralph Mupita / President & CEO",
         "MemberSince": "01/05/1994",
         "Membership": "Bronze",
-        "logo": "https://www.mtn.com/wp-content/uploads/2023/01/mtn-logo.png"
+        "logo": "https://onlinecms.mtn.co.za/sites/default/files/design-system%2C%20vivid%2C%20images%2C%20icons/brand/mtn_logo_lg-sunshine.svg"
     },
     {
         "Name": "IQbusiness",
@@ -19,7 +19,7 @@
         "Representative": "Adam Craker / CEO",
         "MemberSince": "01/11/2000",
         "Membership": "Silver",
-        "logo": "https://www.iqbusiness.net/wp-content/uploads/2020/07/iqbusiness-logo.png"
+        "logo": "https://blueprints.co.za/wp-content/uploads/2018/07/IQbusiness-Logo-Electronic-Dictionary-e1533124519132.png"
     },
     {
         "Name": "3M South Africa",
@@ -41,7 +41,7 @@
         "Representative": "Mpumi Madisa / CEO",
         "MemberSince": "01/05/1988",
         "Membership": "Bronze",
-        "logo": "https://www.bidvest.co.za/images/logo.png"
+        "logo": "https://bidvest.co.za/images/bidvest-color-blu.svg"
     },
     {
         "Name": "Airlink",
@@ -52,7 +52,7 @@
         "Representative": "Rodger Foster / CEO and Managing Director",
         "MemberSince": "02/05/1992",
         "Membership": "Silver",
-        "logo": "https://www.flyairlink.com/images/logo.png"
+        "logo": "https://www.flyairlink.com/themes/pegasus/assets/images/svg/airlink-logo.svg"
     },
     {
         "Name": "ABB South Africa (Pty) Ltd",
@@ -74,7 +74,7 @@
         "Representative": "Stephen Saad / Group Chief Executive",
         "MemberSince": "01/11/1997",
         "Membership": "Bronze",
-        "logo": "https://www.aspenpharma.com/wp-content/uploads/2019/03/Aspen-Logo-RGB-300dpi-e1552329277793.png"
+        "logo": "https://www.aspenpharma.com/wp-content/uploads/2024/05/2001-aspen-history-corporate-identity-img.jpg"
     },
     {
         "Name": "Eskom Holdings SOC Ltd",
@@ -85,7 +85,7 @@
         "Representative": "Dan Marokane / Group Chief Executive",
         "MemberSince": "01/05/1923",
         "Membership": "Silver",
-        "logo": "https://www.eskom.co.za/wp-content/uploads/2022/10/Eskom-logo.png"
+        "logo": "https://www.southafricanmi.com/uploads/6/9/3/7/69372701/eskom-logo_orig.png"
     },
     {
         "Name": "AIESEC South Africa",
@@ -96,6 +96,6 @@
         "Representative": "Thato Mokoena / National President",
         "MemberSince": "01/01/2009",
         "Membership": "Gold",
-        "logo": "https://aiesec.org/_nuxt/img/aiesec-logo.1c2b96c.svg"
+        "logo": "https://cdn-expa.aiesec.org/assets/images/aiesec_logo_black.svg"
     }
 ]
