@@ -8,8 +8,8 @@
     <meta property="og:title" content="Directory | Chamber South Africa">
     <meta property="og:type" content="website">
     <meta property="og:image"
-        content="https://demetrioaris.github.io/wdd231/chamber/images/logo-chamber-modified-small.webp">
-    <meta property="og:url" content="https://demetrioaris.github.io/wdd231/chamber/directory.html">
+        content="https://sanele23.github.io/wdd231/chamber/images/logo-chamber-modified-small.webp">
+    <meta property="og:url" content="https://sanele23.github.io/wdd231/chamber/directory.html">
     <meta property="og:description" content="Chamber of South Africa, Join us to get more information">
     <meta property="fb:app_id" content="your-app-id-here">
 
@@ -34,6 +34,7 @@
 
     <script type="module" src="./scripts/app.js"></script>
     <script src="./scripts/modules/home.js" defer></script>
+    <script src="./scripts/main.js"  defer></script>
 
 
     <link rel="icon" href="images/favicon-main-modified.ico" sizes="48x48" type="image/ico">
@@ -60,12 +61,12 @@
     <main>
         <section class="hero-main-box">
             <picture class="hero-box-img">
-                <source media="(max-width: 600px)" srcset="images/hero-chamber-410.png">
-                <source media="(max-width: 800px)" srcset="images/hero-chamber-600.png">
-                <source media="(max-width: 1200px)" srcset="images/hero-chamber-800.png">
-                <source media="(min-width: 1201px)" srcset="images/hero-chamber-1200.png">
-                <img class="hero-home-img" src="images/hero-chamber-1200.png" alt="Cape Town City">
-            </picture>
+                <source media="(max-width: 410px)" srcset="images/business-banner.jpg">
+                <source media="(max-width: 600px)" srcset="images/business-banner.jpg">
+                <source media="(max-width: 800px)" srcset="images/business-banner.jpg">
+                <source media="(max-width: 1200px)" srcset="images/business-banner.jpg">
+                <img class="hero-home-img" src="images/business-banner.jpg" alt="Cape Town City" style="width:100%;height:auto;">
+              </picture>
 
             <div class="call-to-action">
                 <h3>Join the South Africa Chamber of Commerce today!</h3>
@@ -87,7 +88,7 @@
     </main>
 
     <footer>
-        <p>&copy;<span id="currentyear">Lorem</span> Sanele Krakra |
+        <p>&copy;<span id="currentyear"></span> Sanele Krakra |
             South Africa</p>
         <p id="lastModified"></p>
     </footer>
