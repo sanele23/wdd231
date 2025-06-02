@@ -52,6 +52,7 @@
     .hero-main-box {
         grid-row: 1;
         grid-column: 2;
+        width: auto;
     }
 
     .call-to-action {
