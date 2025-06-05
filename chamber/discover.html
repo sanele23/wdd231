@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Directory | Chamber capetown-logo.png" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://sanele23.github.io/wdd231/chamber/images/logo-chamber-modified-small.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://sanele23.github.io/wdd231/chamber/directory.html"
+    />
+    <meta
+      property="og:description"
+      content="Chamber of South Africa, Join us to get more information"
+    />
+    <meta property="fb:app_id" content="your-app-id-here" />
+
+    <title>Discover | South Africa Chamber of Commerce</title>
+    <meta name="description" content="Chamber directory, South Africa" />
+    <meta name="author" content="Sanele Krakra" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap"
+      />
+    </noscript>
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+
+    <script type="module" src="./scripts/app.js"></script>
+    <script src="./scripts/modules/discover.js" defer></script>
+
+    <link
+      rel="icon"
+      href="images/favicon-main-modified.ico"
+      sizes="48x48"
+      type="image/ico"
+    />
+    <script
+      src="https://kit.fontawesome.com/e0a574ddb0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="discover-page">
+    <header>
+      <nav>
+        <div class="box-logo-header">
+          <img
+            class="logo-chamber"
+            src="images/capetown-logo.png"
+            alt="Logo Chamber capetown-logo.png"
+          />
+          <h1 class="nameHeader">Cape Town<br />Chamber of Ecomerces</h1>
+          <button
+            name="navigation button"
+            id="menu"
+            aria-label="Toggle menu"
+          ></button>
+        </div>
+        <ul>
+          <li><a class="nav-a" href="./index.html">Home</a></li>
+          <li><a class="nav-a" href="./discover.html">Discover</a></li>
+          <li><a class="nav-a" href="./directory.html">Directory</a></li>
+          <li><a class="nav-a" href="./join.html">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="discover">
+      <section class="side-bar">
+        <article class="article-01">
+          <header>
+            <h3>Demographics</h3>
+          </header>
+          <ul>
+            <li><strong>Capital: </strong> Cape Town</li>
+            <li><strong>Currencies: </strong>South African Rand</li>
+            <li>
+              <strong>Official languages: </strong>Ndebele, Pedi, Sotho, South
+              African Sign Language, Swazi, Tsonga, Tswana, Venda, Afrikaans,
+              Xhosa, Zulu, and English
+            </li>
+            <li><strong>Population: </strong> 63.21 million</li>
+            <li><strong>Dialing code: </strong> +27</li>
+          </ul>
+        </article>
+        <article id="article-02" class="article-02"></article>
+        <article class="article-03">
+          <table id="calendar">
+            <caption></caption>
+            <!-- Moved out of thead -->
+            <thead>
+              <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </article>
+      </section>
+      <section class="local-photos">
+        <figure>
+          <img
+            data-src="https://cape.luxury/wp-content/uploads/2023/06/CAMPS-BAY-Photo-by-Jaman-Asad-jaman-asad-FQ03xcur9As-unsplash-copy.jpg"
+            src="https://cape.luxury/wp-content/uploads/2023/06/CAMPS-BAY-Photo-by-Jaman-Asad-jaman-asad-FQ03xcur9As-unsplash-copy.jpg"
+            alt="Beautiful sunset over Camps Bay Beach, Cape Town"
+            class="lazy-image"
+            loading="lazy"
+          />
+          <figcaption>
+            Beautiful sunset over Camps Bay Beach, Cape Town
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            data-src="https://www.roxannereid.co.za/uploads/3/7/7/8/3778676/roxannereid-1l3a0009-2-20190917-2_orig.jpg"
+            src="https://www.roxannereid.co.za/uploads/3/7/7/8/3778676/roxannereid-1l3a0009-2-20190917-2_orig.jpg"
+            alt="Historic town square in Stellenbosch"
+            class="lazy-image"
+            loading="lazy"
+          />
+          <figcaption>Historic town square in Stellenbosch</figcaption>
+        </figure>
+        <figure>
+          <img
+            data-src="https://www.geoparkes.co.za/wp-content/uploads/2021/08/knysna_forest_blog.jpg"
+            src="https://www.geoparkes.co.za/wp-content/uploads/2021/08/knysna_forest_blog.jpg"
+            alt="Lush Knysna forest"
+            class="lazy-image"
+            loading="lazy"
+          />
+          <figcaption>Lush Knysna forest</figcaption>
+        </figure>
+        <figure>
+          <img
+            data-src="https://www.nature-reserve.co.za/images/drakensberg-mountain-hike-hampton-01-590x390.jpg"
+            src="https://www.nature-reserve.co.za/images/drakensberg-mountain-hike-hampton-01-590x390.jpg"
+            alt="Mountain landscape of Drakensberg"
+            class="lazy-image"
+            loading="lazy"
+          />
+          <figcaption>Mountain landscape of Drakensberg</figcaption>
+        </figure>
+        <figure>
+          <img
+            data-src="https://www.tourismportals.co.za/image/large/sue_waugh_1250x937.jpg"
+            src="https://www.tourismportals.co.za/image/large/sue_waugh_1250x937.jpg"
+            alt="Colonial architecture in Grahamstown (Makhanda)"
+            class="lazy-image"
+            loading="lazy"
+          />
+          <figcaption>
+            Colonial architecture in Grahamstown (Makhanda)
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            data-src="https://south-africa.net/wp-content/uploads/2024/09/discovering-johannesburg-a-vibrant-tapestry-of-culture-nature-and-flavor.jpg"
+            src="https://south-africa.net/wp-content/uploads/2024/09/discovering-johannesburg-a-vibrant-tapestry-of-culture-nature-and-flavor.jpg"
+            alt="Vibrant Johannesburg city skyline"
+            class="lazy-image"
+            loading="lazy"
+          />
+          <figcaption>Vibrant Johannesburg city skyline</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear">Lorem</span> Sanele Krakra | South Africa
+      </p>
+      <p id="lastModified">Lorem ipsum</p>
+    </footer>
+  </body>
+</html>
