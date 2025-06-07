@@ -1,93 +1,77 @@
-let actual = new Date();
+let currentDate = new Date();
 
-function mostrarCalendario(year, month) {
-  let now = new Date(year, month - 1, 1);
-  let last = new Date(year, month, 0);
-  let primerDiaSemana = now.getDay(); // No adjustment needed, Sunday is 0
-  let ultimoDiaMes = last.getDate();
-  let dia = 0;
-  let resultado = "<tr>"; // No background color here
-  let diaActual = 0;
-  console.log(ultimoDiaMes);
-  let last_cell = primerDiaSemana + ultimoDiaMes;
+function showCalendar(year, month) {
+  let firstDayOfMonth = new Date(year, month - 1, 1);
+  let lastDayOfMonth = new Date(year, month, 0);
+  let firstWeekDay = firstDayOfMonth.getDay(); // Sunday is 0
+  let daysInMonth = lastDayOfMonth.getDate();
+  let day = 0;
+  let result = "<tr>";
+  let lastCell = firstWeekDay + daysInMonth;
 
-  // hacemos un bucle hasta 42 (6 filas de 7 días)
+  // Loop for up to 42 cells (6 rows of 7 days)
   for (let i = 1; i <= 42; i++) {
-    if (i == primerDiaSemana + 1) {
-      // determinamos en qué día empieza
-      dia = 1;
+    if (i == firstWeekDay + 1) {
+      day = 1;
     }
-    if (i <= primerDiaSemana || i >= last_cell) {
-      // celda vacía
-      resultado += "<td>&nbsp;</td>";
+    if (i <= firstWeekDay || i >= lastCell) {
+      // Empty cell
+      result += "<td>&nbsp;</td>";
     } else {
-      // mostramos el día
+      // Show the day
       if (
-        dia == actual.getDate() &&
-        month == actual.getMonth() + 1 &&
-        year == actual.getFullYear()
+        day == currentDate.getDate() &&
+        month == currentDate.getMonth() + 1 &&
+        year == currentDate.getFullYear()
       )
-        resultado += "<td class='hoy'>" + dia + "</td>";
-      // Día actual con la clase 'hoy'
+        result += "<td class='today'>" + day + "</td>"; // Highlight today
       else
-        resultado += "<td style='background-color: silver;'>" + dia + "</td>"; // Solo aplica el fondo en los días
-      dia++;
+        result += "<td style='background-color: silver;'>" + day + "</td>"; // Regular day
+      day++;
     }
     if (i % 7 == 0) {
-      if (dia > ultimoDiaMes) break;
-      resultado += "</tr><tr>\n";
+      if (day > daysInMonth) break;
+      result += "</tr><tr>\n";
     }
   }
-  resultado += "</tr>";
+  result += "</tr>";
 
-  let meses = [
-    "Enero",
-    "Febrero",
-    "Marzo",
-    "Abril",
-    "Mayo",
-    "Junio",
-    "Julio",
-    "Agosto",
-    "Septiembre",
-    "Octubre",
-    "Noviembre",
-    "Diciembre",
+  let months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
   ];
 
-  // Calculamos el siguiente mes y año
+  // Calculate next month and year
   let nextMonth = month + 1;
   let nextYear = year;
-
   if (month + 1 > 12) {
     nextMonth = 1;
     nextYear = year + 1;
   }
 
-  // Calculamos el anterior mes y año
+  // Calculate previous month and year
   let prevMonth = month - 1;
   let prevYear = year;
-
   if (month - 1 < 1) {
     prevMonth = 12;
     prevYear = year - 1;
   }
 
-  // Actualizamos el contenido del caption y el tbody
+  // Update caption and tbody content
   document
     .getElementById("calendar")
     .getElementsByTagName("caption")[0].innerHTML =
     "<div>" +
-    meses[month - 1] +
+    months[month - 1] +
     " / " +
     year +
     "</div>" +
-    "<div><a href='javascript:void(0)' onclick='mostrarCalendario(" +
+    "<div><a href='javascript:void(0)' onclick='showCalendar(" +
     prevYear +
     "," +
     prevMonth +
     ")'>&lt;</a> " +
-    "<a href='javascript:void(0)' onclick='mostrarCalendario(" +
+    "<a href='javascript:void(0)' onclick='showCalendar(" +
     nextYear +
     "," +
     nextMonth +
@@ -95,11 +79,11 @@ function mostrarCalendario(year, month) {
 
   document
     .getElementById("calendar")
-    .getElementsByTagName("tbody")[0].innerHTML = resultado;
+    .getElementsByTagName("tbody")[0].innerHTML = result;
 }
 
-// Inicializar el calendario con el mes actual
-mostrarCalendario(actual.getFullYear(), actual.getMonth() + 1);
+// Initialize the calendar with the current month
+showCalendar(currentDate.getFullYear(), currentDate.getMonth() + 1);
 
 document.addEventListener("DOMContentLoaded", function () {
   const lazyImages = document.querySelectorAll(".lazy-image");
