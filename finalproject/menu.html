@@ -5,30 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Taste the best of South Africa's dishes in the streets of Soweto with In The Kitchen With Sethu. Explore our menu, meet our expert chef, and learn more about us!"
+      content="Explore the diverse menu of In The Kitchen With Sethu, featuring South African favorites and more."
     />
-    <meta
-      name="keywords"
-      content="South African food, Soweto, menu, traditional dishes, chef, about, contact"
-    />
-    <meta name="author" content="Siphosethu Krakra" />
+    <title>In The Kitchen With Sethu | Menu</title>
     <link rel="icon" href="images/logo.jpeg" type="image/jpeg" />
-    <title>In The Kitchen With Sethu | Home</title>
-
-    <!-- Font and Icons -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
     <!-- CSS Files -->
     <link rel="stylesheet" href="styles/global.css" />
     <link
@@ -36,19 +20,17 @@
       href="styles/mobile.css"
       media="(max-width: 900px)"
     />
-
-    <!-- JavaScript Files -->
-    <script type="module" src="./scripts/app.js"></script>
-    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="styles/menu.css" />
   </head>
   <body>
-    <!-- Header/Navigation -->
+    <!-- Header/Navigation (consistent across all pages) -->
     <header class="black-header">
       <a href="index.html" class="logo" aria-label="Home">
         <img
           src="images/logo.jpeg"
           alt="In The Kitchen With Sethu Logo"
           width="150"
+          height="auto"
         />
       </a>
       <button
@@ -64,8 +46,8 @@
       </button>
       <nav id="mainNav" aria-label="Main Navigation">
         <ul class="navigation">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" aria-current="page">Menu</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="expert.html">Expert</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -73,34 +55,38 @@
       </nav>
     </header>
 
-    <!-- Cover Page section -->
     <main>
-      <section class="banner" id="banner">
-        <div class="content">
-          <h1>In The Kitchen With Sethu<span>.</span></h1>
-          <p>
-            Taste the best of South Africa's dishes in the streets of
-            Soweto<span>.</span>
+      <!-- Menu Section -->
+      <section class="menu" id="menu">
+        <div class="title">
+          <h2>Our <span>M</span>enu</h2>
+          <p class="centered">
+            Our menu does its best to accommodate everyone. We have different
+            types of categories that customers can order from.
           </p>
-          <a href="menu.html" class="btn">Our Menu</a>
+        </div>
+        <div class="content" aria-label="Menu Categories">
+          <!-- Menu items will be rendered here by JS -->
+        </div>
+        <div class="title">
+          <a href="expert.html" class="btn">Our Chef</a>
         </div>
       </section>
     </main>
-
     <footer>
       <p>&copy;<span id="currentyear"></span> Sanele Krakra | South Africa</p>
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/footer.js"></script>
+    <!-- Scripts -->
+    <script src="https://use.fontawesome.com/1e803d693b.js"></script>
+    <!-- Sticky Header (if needed for all pages) -->
+    <script src="scripts/main.js"></script>
     <script src="/finalproject/scripts/modules/hamburger.js"></script>
-    <!-- JavaScript -->
-    <script>
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (header) {
-          header.classList.toggle("sticky", window.scrollY > 0);
-        }
-      });
+    <!-- Menu Rendering (ES6 Module) -->
+    <script type="module">
+      import { renderMenu } from "./scripts/modules/renderMenu.js";
+      renderMenu(".menu .content");
     </script>
   </body>
 </html>

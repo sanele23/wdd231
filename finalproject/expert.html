@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet our kitchen expert, Siphosethu Krakra, and discover the passion behind In The Kitchen With Sethu."
+    />
+    <title>In The Kitchen With Sethu | Expert</title>
+    <link rel="icon" href="images/logo.jpeg" type="image/jpeg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="styles/mobile.css"
+      media="(max-width: 900px)"
+    />
+    <link rel="stylesheet" href="styles/expert.css" />
+  </head>
+  <body>
+    <!-- Header/Navigation -->
+    <header class="black-header">
+      <a href="index.html" class="logo" aria-label="Home">
+        <img
+          src="images/logo.jpeg"
+          alt="In The Kitchen With Sethu Logo"
+          width="150"
+          height="auto"
+        />
+      </a>
+      <button
+        class="hamburger"
+        id="hamburgerBtn"
+        aria-label="Open navigation"
+        aria-controls="mainNav"
+        aria-expanded="false"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <nav id="mainNav" aria-label="Main Navigation">
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="expert.html" aria-current="page">Expert</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="expert" id="expert">
+        <div class="title">
+          <h2>Meet Our Kitchen <span>E</span>xpert</h2>
+        </div>
+        <div class="content">
+          <div class="box">
+            <div class="imgBox">
+              <img
+                src="images/expert.png"
+                alt="Expert Chef Siphosethu Krakra"
+              />
+            </div>
+            <div class="text">
+              <h3>Siphosethu Krakra (Founder & Head Chef)</h3>
+            </div>
+          </div>
+        </div>
+        <div class="expert-intro">
+          <h3>About Siphosethu Krakra</h3>
+          <p>
+            With over a decade in the culinary industry, Siphosethu Krakra is
+            the creative force behind "In The Kitchen With Sethu". Born and
+            raised in Soweto, Siphosethu grew up savoring the rich flavors and
+            diverse dishes of South Africa. Her journey began in her
+            grandmother’s kitchen, where she learned that food is not just about
+            taste, but about culture, connection, and storytelling.
+          </p>
+          <p>
+            After formal training in culinary arts and years of honing her craft
+            in renowned kitchens, Siphosethu returned home to bring her vision
+            to life. Her cooking philosophy is simple: use fresh, locally
+            sourced ingredients to create dishes that honor tradition while
+            adding a modern twist.
+          </p>
+        </div>
+        <div class="expert-why">
+          <h3>Why Choose In The Kitchen With Sethu?</h3>
+          <ul>
+            <li>
+              Authentic South African recipes passed down through generations
+            </li>
+            <li>
+              Inventive fusion dishes inspired by Soweto’s vibrant culture
+            </li>
+            <li>
+              Passion for community, sustainability, and culinary education
+            </li>
+          </ul>
+        </div>
+        <div class="expert-quote">
+          <blockquote>
+            <p>
+              "Cooking is my love language. Every dish I create is a celebration
+              of my heritage and a gift to those I serve."
+            </p>
+            <footer>– Siphosethu Krakra</footer>
+          </blockquote>
+        </div>
+        <div class="expert-cta">
+          <h3>Connect with Sethu</h3>
+          <p>
+            Want to learn more, book a private event, or ask a culinary
+            question? <a href="contact.html">Contact Sethu</a> today!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span> Sanele Krakra | South Africa</p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/footer.js"></script>
+    <script src="/finalproject/scripts/modules/hamburger.js"></script>
+  </body>
+</html>

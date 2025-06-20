@@ -1,0 +1,100 @@
+/* Expert Page Additional Styles */
+
+.expert-intro,
+.expert-why,
+.expert-quote,
+.expert-cta {
+  max-width: 700px;
+  margin: 100px auto 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  padding: 30px 24px;
+  font-size: 1.1rem;
+}
+
+.expert-intro h3,
+.expert-why h3,
+.expert-cta h3 {
+  color: #ff0101;
+  font-size: 1.35em;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.expert-intro p,
+.expert-why ul,
+.expert-cta p {
+  color: #333;
+  margin-bottom: 0;
+}
+
+.expert-why ul {
+  list-style: disc inside;
+  margin: 10px 0 0 0;
+  padding-left: 0;
+}
+
+.expert-why ul li {
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.expert-quote {
+  background: #f6f7f8;
+  border-left: 6px solid #ff0101;
+  font-style: italic;
+  padding: 24px 30px;
+  margin-top: 35px;
+  position: relative;
+}
+
+.expert-quote blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.expert-quote p {
+  font-size: 1.15em;
+  line-height: 1.7;
+  color: #222;
+}
+
+.expert-quote footer {
+  display: block;
+  margin-top: 16px;
+  color: #555;
+  font-style: normal;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: right;
+}
+
+.expert-cta {
+  text-align: center;
+  margin-top: 30px;
+  background: #fafbfc;
+}
+
+.expert-cta a {
+  color: #ff0101;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.expert-cta a:hover,
+.expert-cta a:focus {
+  color: #d10000;
+}
+
+/* Responsive tweaks for expert sections */
+@media (max-width: 900px) {
+  .expert-intro,
+  .expert-why,
+  .expert-quote,
+  .expert-cta {
+    padding: 18px 8px;
+    font-size: 1em;
+  }
+}
