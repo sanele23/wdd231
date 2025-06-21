@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="See your submitted form data." />
+    <title>Contact Form Submission | In The Kitchen With Sethu</title>
+    <link rel="icon" href="images/logo.jpeg" type="image/jpeg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="styles/mobile.css"
+      media="(max-width: 900px)"
+    />
+  </head>
+  <body>
+    <header class="black-header">
+      <a href="index.html" class="logo" aria-label="Home">
+        <img
+          src="images/logo.jpeg"
+          alt="In The Kitchen With Sethu Logo"
+          width="150"
+        />
+      </a>
+      <button
+        class="hamburger"
+        id="hamburgerBtn"
+        aria-label="Open navigation"
+        aria-controls="mainNav"
+        aria-expanded="false"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <nav id="mainNav" aria-label="Main Navigation">
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="expert.html">Expert</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form-action-display">
+        <div class="title">
+          <h2>Thank you for contacting us!</h2>
+          <p>Your submitted details:</p>
+        </div>
+        <div class="submitted-data" id="submittedData">
+          <!-- JS will populate this -->
+        </div>
+        <a href="contact.html" class="btn">Back to Contact</a>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> Sanele Krakra | South Africa |
+        <a
+          href="https://www.loom.com/share/be127fc7f1f1428c834205917b87e852?sid=6e685847-9434-4022-8772-5a65c24b7854"
+          class="footer-link"
+          target="_blank"
+          rel="noopener"
+          >Loom Video Demo</a
+        >
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/footer.js"></script>
+    <script src="/finalproject/scripts/modules/hamburger.js"></script>
+    <script>
+      // Read URL params and display them
+      function escapeHTML(str) {
+        return str
+          ? str.replace(/[&<>"']/g, function (m) {
+              return {
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;",
+              }[m];
+            })
+          : "";
+      }
+      function displayFormData() {
+        const params = new URLSearchParams(window.location.search);
+        const name = escapeHTML(params.get("name"));
+        const email = escapeHTML(params.get("email"));
+        const subject = escapeHTML(params.get("subject"));
+        const message = escapeHTML(params.get("message"));
+        const container = document.getElementById("submittedData");
+        if (name || email || subject || message) {
+          container.innerHTML = `
+            <ul>
+              <li><strong>Name:</strong> ${name}</li>
+              <li><strong>Email:</strong> ${email}</li>
+              <li><strong>Subject:</strong> ${subject}</li>
+              <li><strong>Message:</strong> <pre>${message}</pre></li>
+            </ul>
+          `;
+        } else {
+          container.innerHTML = "<p>No form data found.</p>";
+        }
+      }
+      displayFormData();
+    </script>
+  </body>
+</html>

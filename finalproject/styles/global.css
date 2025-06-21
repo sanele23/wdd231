@@ -246,6 +246,48 @@ footer p {
   margin: 0.5em 0;
 }
 
+/* Form */
+.form-action-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 100px;
+}
+
+.form-action-display .title {
+  margin-bottom: 1.5rem;
+}
+
+.form-action-display .submitted-data {
+  margin: 1.5rem 0;
+  text-align: left;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-action-display ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-action-display li {
+  margin-bottom: 1rem;
+  word-break: break-word;
+}
+
+.form-action-display .btn {
+  margin-top: 1.5rem;
+}
+
 /* Footer link styling for desktop and all sizes */
 footer a.footer-link {
   color: #ff0101;
