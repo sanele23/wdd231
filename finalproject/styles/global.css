@@ -245,3 +245,18 @@ footer {
 footer p {
   margin: 0.5em 0;
 }
+
+/* Footer link styling for desktop and all sizes */
+footer a.footer-link {
+  color: #ff0101;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-left: 8px;
+  transition: color 0.2s;
+  word-break: break-all;
+}
+footer a.footer-link:hover,
+footer a.footer-link:focus {
+  color: #222;
+  text-decoration: none;
+}

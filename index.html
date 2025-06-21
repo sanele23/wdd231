@@ -1,91 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page">
-    <meta name="author" content="Sanele Krakra">
-    <link rel="icon" href="images/favorite-favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home page" />
+    <meta name="author" content="Sanele Krakra" />
+    <link rel="icon" href="images/favorite-favicon.ico" />
     <!--  Essential META Tags -->
-    <meta property="og:title" content="Home | Sanele Krakra">
+    <meta property="og:title" content="Home | Sanele Krakra" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/capetown.jpg">
-    <meta property="og:url" content="https://sanele23.github.io/wdd231/index.html">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="images/capetown.jpg" />
+    <meta
+      property="og:url"
+      content="https://sanele23.github.io/wdd231/index.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <title>Home | Sanele Krakra</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles/large-screen.css">
-    <link rel="stylesheet" href="styles/small-screen.css">
+    <link rel="stylesheet" href="styles/large-screen.css" />
+    <link rel="stylesheet" href="styles/small-screen.css" />
     <!-- JavaScript files -->
     <script src="scripts/main.js" type="module" defer></script>
     <script src="scripts/courses.js" type="module" defer></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="container">
-            <img class="avatar" src="images/sanele-krakra.jfif" alt="Sanele Krakra photo">
-        </div>
-        <h1>Sanele Krakra</h1>
-        <button id="menu" title="Menu"></button>
+      <div class="container">
+        <img
+          class="avatar"
+          src="images/sanele-krakra.jfif"
+          alt="Sanele Krakra photo"
+        />
+      </div>
+      <h1>Sanele Krakra</h1>
+      <button id="menu" title="Menu"></button>
     </header>
     <nav>
-        <ul>
-            <li><a class="active" href="/index.html">Home</a></li>
-            <li><a href="https://github.com/sanele23" target="_blank">GitHub Profile</a></li>
-            <li><a href="https://www.linkedin.com/in/sanele-krakra/" target="_blank">LinkedIn Profile</a></li>
-            <li><a href="chamber/index.html" target="_blank">Chamber</a></li>
-        </ul>
+      <ul>
+        <li><a class="active" href="/index.html">Home</a></li>
+        <li>
+          <a href="https://github.com/sanele23" target="_blank"
+            >GitHub Profile</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/sanele-krakra/" target="_blank"
+            >LinkedIn Profile</a
+          >
+        </li>
+        <li><a href="chamber/index.html" target="_blank">Chamber</a></li>
+        <li><a href="finalproject/index.html" target="_blank">Final</a></li>
+      </ul>
     </nav>
     <main>
-        <section class="courseWork-box">
-            <h2>Course Work</h2>
-            <ul>
-                <li>Chamber of Commerce Site Planning</li>
-                <li>Chamber of Commerce Directory Page</li>
-                <li>Chamber Home Page</li>
-                <li>Chamber Membership Application Form / Project Subject Proposal</li>
-                <li>Chamber Discover Page / Project Site Plan
-                </li>
-                <li>Individual Website Project</li>
-                <li>Final Exam Test</li>
-            </ul>
-        </section>
-        <section class="country-box">
-            <h2>South Africa</h2>
-            <picture>
-                <!-- <source media="(min-width: 768px)" srcset="images/capetown_small.jpg">
-                <source media="(min-width: 1024px)" srcset="images/capetown_mediun.png"> -->
-                <!-- More to be added -->
-                <img src="./images/capetown.jpg" alt="South Africa" width="300" height="225">
-            </picture>
-            <p>Cape Town</p>
-        </section>
-        <section class="certificate-box">
-            <h2>Web and Computer Programming certificate</h2>
-            <div class="boxButton">
-                <button class="courseButton" value="all" title="Filter button">All</button>
-                <button class="courseButton" value="cse" title="Filter button">CSE</button>
-                <button class="courseButton" value="wdd" title="Filter button">WDD</button>
-            </div>
-            <div class="boxcertificate01 boxCourse"></div>
-            <dialog id="courses-details"></dialog>
-            <p id="totalCreditsCert01">Total Credits for Certificate 1: 0</p>
-        </section>
-
+      <section class="courseWork-box">
+        <h2>Course Work</h2>
+        <ul>
+          <li>Chamber of Commerce Site Planning</li>
+          <li>Chamber of Commerce Directory Page</li>
+          <li>Chamber Home Page</li>
+          <li>
+            Chamber Membership Application Form / Project Subject Proposal
+          </li>
+          <li>Chamber Discover Page / Project Site Plan</li>
+          <li>Individual Website Project</li>
+          <li>Final Exam Test</li>
+        </ul>
+      </section>
+      <section class="country-box">
+        <h2>South Africa</h2>
+        <picture>
+          <img
+            src="./images/capetown.jpg"
+            alt="South Africa"
+            width="300"
+            height="225"
+          />
+        </picture>
+        <p>Cape Town</p>
+      </section>
+      <section class="certificate-box">
+        <h2>Web and Computer Programming certificate</h2>
+        <div class="boxButton">
+          <button class="courseButton" value="all" title="Filter button">
+            All
+          </button>
+          <button class="courseButton" value="cse" title="Filter button">
+            CSE
+          </button>
+          <button class="courseButton" value="wdd" title="Filter button">
+            WDD
+          </button>
+        </div>
+        <div class="boxcertificate01 boxCourse"></div>
+        <dialog id="courses-details"></dialog>
+        <p id="totalCreditsCert01">Total Credits for Certificate 1: 0</p>
+      </section>
     </main>
     <footer>
-        <p>&copy;<span id="currentYear">Lorem</span> Sanele Krakra |
-            South Africa</p>
-        <p id="lastModified"></p>
-        
+      <p>
+        &copy;<span id="currentYear">Lorem</span> Sanele Krakra | South Africa
+      </p>
+      <li><a href="finalproject/index.html" target="_blank">Final</a></li>
+      <p id="lastModified"></p>
     </footer>
-</body>
-
+  </body>
 </html>

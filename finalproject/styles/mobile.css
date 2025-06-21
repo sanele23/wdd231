@@ -10,6 +10,9 @@
     z-index: 1000;
   }
 
+  .title p {
+    font-size: 0.5em;
+  }
   /* Hamburger button: right-aligned, only visible on mobile */
   .hamburger {
     display: flex;
@@ -113,5 +116,20 @@
   .about-content,
   .contact-section {
     padding: 16px 8px 32px 8px;
+  }
+
+  /* Footer link styling for mobile */
+  footer a.footer-link {
+    color: #ff0101;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-left: 8px;
+    transition: color 0.2s;
+    word-break: break-all;
+  }
+  footer a.footer-link:hover,
+  footer a.footer-link:focus {
+    color: #222;
+    text-decoration: none;
   }
 }
