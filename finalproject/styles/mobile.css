@@ -1,4 +1,8 @@
 @media (max-width: 900px) {
+  header .logo img {
+    vertical-align: middle;
+    margin-left: -80px;
+  }
   /* Header: Flex row, logo left, hamburger right */
   .black-header {
     display: flex;
@@ -32,7 +36,7 @@
     width: 28px;
     height: 3.2px;
     background: #ad3333;
-    margin: 4px 0;
+    margin: 4px 0 0 150px;
     border-radius: 2px;
     display: block;
     transition: all 0.3s;
